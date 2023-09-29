@@ -1,0 +1,58 @@
+/* STYLING ASIDE SECTION AND CREATE USER FORM */
+.aside-section {
+    position: absolute;
+    right: 1%;
+    align-items: center !important;
+    overflow: hidden;
+    top: 11vh;
+    transition: height 0.5s ease;
+    width: 30vw;
+    height: 0;
+}
+
+.aside-section>img {
+    width: 30px;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+
+/* STYLING FORM */
+.aside-section>form {
+    margin-top: 40px;
+    border: 2px var(--borderColor) solid;
+    height: 75vh;
+    background-color: var(--formColor);
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aside-section input {
+    width: 90%;
+    border-radius: 4px;
+    padding: 5px;
+    height: 5vh;
+    background-color: rgb(214, 214, 214);
+    border: 2px var(--borderColor) solid;
+    margin-bottom: 2%;
+    outline: none;
+}
+
+#submit-form {
+    background-color: var(--buttonColor);
+    color: var(--fontColor);
+}
+
+
+.aside-section p {
+    margin-top: 10%;
+    color: var(--fontColor);
+    font-size: 20px;
+    font-weight: 700;
+}

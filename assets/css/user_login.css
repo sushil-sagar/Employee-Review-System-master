@@ -1,0 +1,58 @@
+/* STYLING LOGIN PAGE */
+.sign-in-container {
+    border-top: 2px solid var(--borderColor);
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    background-size: cover;
+}
+
+.sign-in-container>img {
+    height: 100%;
+    width: 100%;
+}
+
+/* STYLING SIGN IN FORM */
+.sign-in {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: scroll;
+    top: 5%;
+    right: 5%;
+    width: 25%;
+    height: 65%;
+    background-color: var(--formColor);
+    border: 2px var(--borderColor) solid;
+    border-radius: 5px;
+}
+
+.sign-in h2 {
+    font-size: 30px;
+    color: var(--fontColor);
+    margin-bottom: 5%;
+}
+
+.sign-in input {
+    padding-left: 5px;
+    background-color: rgb(214, 214, 214);
+    width: 90%;
+    height: 20%;
+    border: 2px var(--borderColor) solid;
+    border-radius: 4px;
+    margin-bottom: 6vh;
+    outline: none;
+
+}
+
+.sign-in p {
+    color: var(--fontColor);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#submit-login {
+    background-color: var(--buttonColor);
+    color: var(--fontColor);
+}

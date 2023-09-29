@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/assgn_review_form.css">
+
+<!-- ASSIGN REVIEW FORM -->
+<div class="assign-review-form-container">
+    <form class="assign-review-form" id="assign-review-form">
+        <div>
+          <label for="reviewer">Reviewer:</label>
+          <select class="button-hover" id="reviewer" name="reviewer" required>
+            <option value="" disabled selected>Select Reviewer</option>
+            <% for(user of users ){ %>
+                <option value="<%= user._id  %>"><%=user.name  %></option>
+
+            <% } %>
+          </select>
+        </div>
+        <div>
+          <label for="reviewee">Recipient:</label>
+          <select class="button-hover" id="reviewee" name="reviewee" required>
+            <!-- Populate this select using JavaScript -->
+            <option value="" disabled selected>Select Recipient</option>
+            <% for(user of users ){ %>
+                <option value="<%= user._id  %>"><%= user.name  %></option>
+
+            <% } %>
+          </select>
+        </div>
+        <input class="button-hover" type="submit" value="Assign Review">
+        <div>
+        </div>
+      </form>
+
+</div>

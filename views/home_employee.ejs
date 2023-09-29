@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/home_employee.css">
+
+
+<main class="main-container">
+    <div class="assigned-reviews-container">
+        <div class="heading-container">
+
+            <p>Assigned Reviews</p>
+        </div>
+        <div class="assigned-reviews">
+
+            <% for(review of reviews){ %>
+
+                <div class="assigned-review">
+                    <p>Recipient Name: <span id="username-<%=review._id %>" ><%=review.reviewee.name  %></span> </p>
+                    <img src="/images/icons/expand-right-white.png" alt="" id="<%=review._id  %>" class="open-feedback-form item-hover" >
+                </div>
+
+            <% } %>
+
+    
+    
+        </div>
+    </div>
+
+    <%-include("_submit_feedback_form")  %>
+    
+</main>
+
+
+
+<script type="text/javascript" src="js/home_employee.js"></script>

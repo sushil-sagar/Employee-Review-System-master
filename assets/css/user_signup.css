@@ -1,0 +1,63 @@
+/* STYLING SIGN UP PAGE */
+.sign-up-container {
+    width: 100vw;
+    border-top: 2px solid var(--borderColor);
+    height: 90vh;
+    position: relative;
+}
+
+.sign-up-container>img {
+    width: 100%;
+    height: 100%;
+}
+
+.sign-up {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 5%;
+    overflow: scroll;
+    right: 5%;
+    width: 25%;
+    height: 85%;
+    background-color: var(--formColor);
+    border-radius: 5px;
+    border: 2px var(--borderColor) solid;
+}
+
+.sign-up h2 {
+    font-size: 30px;
+    color: var(--fontColor);
+    margin-bottom: 5%;
+}
+
+.sign-up input {
+    width: 90%;
+    border-radius: 4px;
+    height: 15%;
+    background-color: rgb(214, 214, 214);
+    border: 2px var(--borderColor) solid;
+    margin-bottom: 2%;
+    outline: none;
+}
+
+.sign-up p {
+    color: var(--fontColor);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sign-up select {
+    background-color: rgb(214, 214, 214);
+    border: 2px var(--borderColor) solid;
+    width: 90%;
+    border-radius: 4px;
+    margin-bottom: 2%;
+    height: 15%;
+}
+
+#submit-form {
+    background-color: var(--buttonColor);
+    color: var(--fontColor);
+}

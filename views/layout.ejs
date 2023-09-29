@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="/images/icons/app-logo-white.png">
+    <title>ERS</title>
+    <!-- INCLUDING JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- INCLUDING TOASTR LIB-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <!-- INCLUDING LAYOUT CSS -->
+    <link rel="stylesheet" href="/css/layout.css">
+
+    <%-style %>
+</head>
+
+<body>
+    <%-include("_header") %>
+
+
+        <%- body %>
+
+
+
+
+
+
+        <script src="/js/layout.js"></script>
+            <%- script %>
+            
+        
+            <!-- <script src="/js/layout"></script> -->
+
+            <% if(flash.loginSuccess &&flash.loginSuccess.length>0){ %>
+                <script>
+                        toastr.success("<%=flash.loginSuccess%>");
+
+                    </script>
+                    <% }else if(flash.logoutSuccess&&flash.logoutSuccess.length>0){ %>
+                        <script>
+                            toastr.success("<%=flash.logoutSuccess%>");
+    
+                        </script>
+                        
+                        <% }else if(flash.success&&flash.success.length>0){ %>
+                        <script>
+                            toastr.success("<%=flash.success%>");
+    
+                        </script>
+
+<% }else if(flash.error&&flash.error.length>0){ %>
+    <script>
+        toastr.error("<%=flash.error%>");
+
+    </script>
+
+                        <% } %>
+
+            
+
+                    
+                    
+
+
+</body>
+
+</html>

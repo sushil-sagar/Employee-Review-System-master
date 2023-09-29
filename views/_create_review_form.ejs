@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/css/create_review_form.css">
+
+  <!-- CREATE REVIEW FORM -->
+<div class="create-review-form-container">
+    <form class="create-review-form" action="">
+        <input type="text" hidden name="reviewer" value="<%=locals.user._id  %>">
+        <label for="reviewee">Recipient:</label>
+          <select id="reviewee" name="reviewee" required>
+            <!-- Populate this select using JavaScript -->
+            <option value="" disabled selected>Select Recipient</option>
+            <% for(user of users ){ %>
+                <option value="<%= user._id  %>"><%= user.name  %></option>
+
+            <% } %>
+          </select>
+          <textarea name="feedback" required id="" cols="20" rows="5"></textarea>
+          <input type="text" name="isSubmitted" value="true" hidden id="">
+          <input type="submit" name="" id="">
+
+    </form>
+</div>

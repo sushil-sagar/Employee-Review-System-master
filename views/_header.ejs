@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/header.css">
+
+<!-- HEADER -->
+<header>
+    <div  class="logo-heading-container button-hover" id="logo-heading-container">
+        <img src="/images/icons/app-logo-white.png" alt="logo">
+        <h1>Employee Review System</h1>
+    </div>
+    <nav class="navigation">
+        <ul>
+            <% if(locals.user){ %>
+                <li><a class="text-hover" href="/users/sign-out">Sign Out</a></li>
+                <li class="text-hover"><%= locals.user.name  %></li>
+                <% if(locals.user.isAdmin){ %>
+                    <li><a class="text-hover" href="/users/list">Employees</a></li>
+                    
+                    <% } %>
+                    <li><a class="text-hover" href="/">Home</a></li>
+
+                <% }else{ %>
+                    <!-- <li><a href="/">Home</a></li> -->
+                    <li><a class="text-hover" href="/users/sign-in">Sign In</a></li>
+                    <li><a class="text-hover" href="/users/sign-up">Sign Up</a></li>
+                    <% } %>
+        </ul>
+    </nav>
+
+
+</header>

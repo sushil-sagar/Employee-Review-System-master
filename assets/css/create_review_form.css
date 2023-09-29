@@ -1,0 +1,47 @@
+/* STYLING CREATE REVIEW FORM */
+.create-review-form-container {
+    width: 100%;
+    transition: height .5s ease;
+    height: 0;
+    overflow: hidden;
+}
+
+.create-review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-review-form label {
+    width: auto !important;
+    color: var(--fontColor);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.create-review-form input {
+    background-color: var(--buttonColor);
+    outline: none;
+    border: 2px solid var(--borderColor);
+    color: var(--fontColor);
+}
+
+.create-review-form select {
+    background-color: rgb(214, 214, 214);
+    border: 2px solid var(--borderColor);
+    color: var(--fontColor);
+}
+
+.create-review-form * {
+    border-radius: 4px;
+    width: 90%;
+    margin-top: 4px;
+    height: 5vh;
+    color: black;
+}
+
+.create-review-form textarea {
+    background-color: rgb(214, 214, 214);
+    border: 2px solid var(--borderColor);
+    height: 10vh;
+}

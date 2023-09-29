@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/user_signup.css">
+
+
+<!-- SIGN UP PAGE -->
+<div class="sign-up-container">
+    <img src="/images/backgrounds/1.jpg" alt="">
+    <div class="sign-up">
+        <h2>SIGN UP</h2>
+        <form action="/users/create" method="post">
+            <p>Name</p>
+            <input class="button-hover" name="name" type="text" required placeholder="Enter your Name..">
+            <p>Email</p>
+            <input class="button-hover" name="email" type="email" required placeholder="Enter your Email..">
+            <p>Password</p>
+            <input class="button-hover" name="password" type="password" required placeholder="Enter Your Password">
+            <p>Confirm Password</p>
+            <input class="button-hover" name="confirm_password" type="password" required placeholder="Enter again..">
+            <p>Select Role</p>
+            <select class="button-hover" name="isAdmin" required>
+                <option class="button-hover" value="" disabled selected>Select Role</option>
+                <option  value="false">Employee</option>
+                <option value="true">Admin</option>
+            </select>
+            <input class="button-hover" type="submit" id="submit-form" value="SIGN UP" >
+        </form>
+    </div>
+
+</div>

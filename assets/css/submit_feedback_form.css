@@ -1,0 +1,75 @@
+/* SUBMIT FEEDBACK FORM */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    border-top: 2px solid var(--borderColor);
+    width: 40vw;
+    height: 0;
+    position: absolute;
+    right: 1vh;
+    top: 5vh;
+}
+
+.form-container>div {
+    width: 100%;
+    border-bottom: 2px solid var(--borderColor);
+    height: 6vh;
+}
+
+.form-container>div>p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 5%;
+    color: var(--fontColor);
+    margin-top: 2%;
+}
+
+.submit-feedback {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--borderColor);
+    border-radius: 5px;
+    background-color: var(--formColor);
+    width: 100%;
+    margin-top: 10px;
+    height: 45vh;
+    align-items: center;
+}
+
+.submit-feedback>* {
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 95%;
+}
+
+.submit-feedback>label {
+    width: auto !important;
+    color: var(--fontColor);
+    font-size: 1.2rem;
+}
+
+.submit-feedback>textarea {
+    background-color: rgb(214, 214, 214);
+    border: 2px solid var(--borderColor);
+    padding: 5px;
+}
+
+.submit-feedback>input {
+    height: 5vh;
+    border: 2px solid var(--borderColor);
+    color: var(--fontColor);
+    background-color: var(--buttonColor);
+}
+
+#close-form-btn {
+    width: 95%;
+    border: 2px solid var(--borderColor);
+    color: var(--fontColor);
+    background-color: rgb(138, 138, 138);
+    height: 5vh;
+    margin-top: 10px;
+    border-radius: 5px;
+}

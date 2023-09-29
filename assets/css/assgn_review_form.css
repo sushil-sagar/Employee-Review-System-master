@@ -1,0 +1,41 @@
+/* STYLING ASSIGN REVIEW FORM */
+.assign-review-form-container {
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 1%;
+    background-color: var(--formColor);
+    overflow: hidden;
+    text-align: center;
+    height: 0%;
+    width: 50%;
+}
+
+.assign-review-form label {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--fontColor);
+}
+
+.assign-review-form select {
+    border-radius: 4px;
+    border: 2px solid var(--borderColor);
+    background-color: rgb(214, 214, 214);
+    width: 90%;
+    height: 5vh;
+    color: var(--fontColor);
+}
+
+.assign-review-form option {
+    color: black;
+}
+
+.assign-review-form input {
+    border-radius: 4px;
+    height: 5vh;
+    margin-top: 2%;
+    border: 2px solid var(--borderColor);
+    width: 90%;
+    color: var(--borderColor);
+    background-color: var(--buttonColor);
+}

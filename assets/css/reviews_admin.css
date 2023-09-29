@@ -1,0 +1,126 @@
+/* STYLING REVIEWS */
+.reviews-container {
+    border: 2px solid var(--borderColor);
+    border-radius: 5px;
+    width: 45%;
+    height: 99%;
+    position: absolute;
+    top: 5px;
+    right: 1%;
+}
+
+.reviews-heading {
+    border-bottom: 2px solid var(--borderColor);
+    background-color: var(--headerColor);
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.reviews-heading>p {
+    font-size: 30px;
+    margin-left: 10px;
+    color: var(--fontColor);
+    font-weight: 600;
+}
+
+.reviews-heading>img {
+    transition: all 0.5s ease;
+    margin-right: 10px;
+    width: 35px;
+    height: 100%;
+    height: 35px;
+}
+
+
+.reviews {
+    transition: all 0.5s ease;
+    border: 2px solid var(--borderColor);
+    width: 100%;
+    height: 90%;
+    overflow: scroll;
+}
+
+
+/* styling review items */
+.review {
+    transition: height .5s ease;
+    border: 2px solid var(--borderColor);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--itemColor);
+    align-items: center;
+    overflow: hidden;
+    margin-left: 5%;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 10vh;
+}
+
+.review>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    border-bottom: 2px solid var(--borderColor);
+    align-items: center;
+}
+
+.review>div>div {
+    height: 8vh;
+    width: 80%;
+    margin-left: 1%;
+}
+
+.edit-expand-container {
+    width: 20% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review p {
+    margin-top: 2px;
+    margin-left: 1%;
+    color: var(--fontColor);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.review span {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--fontColor);
+}
+
+.review img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.feedback {
+    display: flex;
+    background-color: var(--itemColor);
+    width: 100%;
+    height: 20vh;
+    color: var(--fontColor);
+    padding: 10px;
+    align-items: flex-start !important;
+}
+
+.feedback>textarea {
+    background-color: rgb(160, 160, 160);
+    width: 100%;
+    height: 20vh;
+}
+
+.feedback-form {
+    width: 100%;
+    padding: 0;
+    height: 20vh;
+}

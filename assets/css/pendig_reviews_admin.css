@@ -1,0 +1,73 @@
+/* STYLING PENDING REVIEWS CONTAINER */
+.pending-reviews-container {
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease height;
+    width: 50%;
+    height: 87%;
+    margin-top: 5px;
+    margin-left: 1%;
+    border-radius: 5px;
+    border: 2px solid var(--borderColor);
+}
+
+.pending-reviews-heading {
+    border-bottom: 2px solid var(--borderColor);
+    background-color: var(--headerColor);
+    border-radius: 5px;
+    width: 100%;
+    height: 8vh;
+}
+
+.pending-reviews-heading>p {
+    font-size: 30px;
+    margin-left: 5px;
+    color: var(--fontColor);
+    font-weight: 600;
+}
+
+.pending-reviews {
+    overflow: scroll;
+    width: 100%;
+    height: 90%;
+}
+
+
+/* styling pending review items */
+.pending-review {
+    border: 2px solid var(--borderColor);
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    background-color: var(--itemColor);
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-top: 5px;
+    height: 10vh;
+}
+
+.pending-review>div {
+    height: 8vh;
+    width: 80%;
+    margin-left: 1%;
+}
+
+.pending-review p {
+    margin-top: 2px;
+    margin-left: 1%;
+    font-size: 17px;
+    color: var(--fontColor);
+    font-weight: 500;
+}
+
+.pending-review span {
+    font-size: 18px;
+    color: var(--fontColor);
+    font-weight: 800;
+}
+
+.pending-review img {
+    width: 30px;
+    margin-right: 2%;
+}
